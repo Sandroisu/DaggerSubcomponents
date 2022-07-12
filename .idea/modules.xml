@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SubcomponentBuilder.iml" filepath="$PROJECT_DIR$/SubcomponentBuilder.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Dagger2_SubcomponentBuilderProject.iml" filepath="$PROJECT_DIR$/.idea/Dagger2_SubcomponentBuilderProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Dagger2_SubcomponentBuilderProject.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Dagger2_SubcomponentBuilderProject.app.iml" />
     </modules>
   </component>
 </project>

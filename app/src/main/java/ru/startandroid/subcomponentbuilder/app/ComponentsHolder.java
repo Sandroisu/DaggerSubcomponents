@@ -5,12 +5,11 @@ import android.content.Context;
 import java.util.HashMap;
 import java.util.Map;
 
+
 import javax.inject.Inject;
 import javax.inject.Provider;
 
-import ru.startandroid.subcomponentbuilder.app.dagger.AppComponent;
 import ru.startandroid.subcomponentbuilder.app.dagger.AppModule;
-import ru.startandroid.subcomponentbuilder.app.dagger.DaggerAppComponent;
 import ru.startandroid.subcomponentbuilder.base.ActivityComponent;
 import ru.startandroid.subcomponentbuilder.base.ActivityComponentBuilder;
 import ru.startandroid.subcomponentbuilder.base.ActivityModule;

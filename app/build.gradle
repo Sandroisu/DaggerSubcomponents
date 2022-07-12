@@ -1,13 +1,11 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.neenbedankt.android-apt'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 31
     defaultConfig {
         applicationId "ru.startandroid.subcomponentbuilder"
-        minSdkVersion 15
-        targetSdkVersion 25
+        minSdkVersion 21
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -18,30 +16,27 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 buildscript {
     repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+
     }
 }
 
 dependencies {
-    def androidSupportLibVersion = '25.3.0'
-    def daggerLibVersion = '2.10'
-    def butterKnifeLibVersion = '8.4.0'
 
     // Android support
-    compile 'com.android.support:appcompat-v7:' + androidSupportLibVersion //
+    implementation 'androidx.appcompat:appcompat:1.4.2'
 
-    // Dagger
-    compile 'com.google.dagger:dagger:' + daggerLibVersion //
-    apt 'com.google.dagger:dagger-compiler:' + daggerLibVersion //
+    implementation 'com.google.dagger:dagger:2.42'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.42'
 
     // ButterKnife
-    compile 'com.jakewharton:butterknife:' + butterKnifeLibVersion //
-    compile 'com.jakewharton:butterknife-compiler:' + butterKnifeLibVersion //
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
 }

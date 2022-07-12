@@ -14,5 +14,4 @@ public interface FirstActivityComponent extends ActivityComponent<FirstActivity>
 
     }
 
-
 }
